@@ -188,7 +188,7 @@ void RowCoverageServer::computeCoveragePath()
     } else {
       rows = util::removeRowsRefPoint(rows, master_field);
     }
-    Field field = master_field.field.getGeometry(0);
+    Field field = master_field.getField().getGeometry(0);
 
     RCLCPP_INFO(
       get_logger(),
